@@ -1,0 +1,72 @@
+﻿@model SmartProd.Models.Fornecedor
+
+@{
+    ViewData["Title"] = "Cadastro de Fornecedores";
+}
+
+
+
+<h4>Fornecedor</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomeEmpresa" class="control-label"></label>
+                <input asp-for="NomeEmpresa" class="form-control" />
+                <span asp-validation-for="NomeEmpresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cnpj" class="control-label"></label>
+                <input asp-for="Cnpj" class="form-control" />
+                <span asp-validation-for="Cnpj" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefone" class="control-label"></label>
+                <input asp-for="Telefone" class="form-control" />
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            
+            <hr />
+            <!-- Endereço -->
+            <h4>Endereço</h4>
+            <div class="form-group">
+                <label>CEP</label>
+                <input id="cep" name="Endereco.Cep" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Logradouro</label>
+                <input id="logradouro" name="Endereco.Logradouro" class="form-control" disabled />
+            </div>
+            <div class="form-group">
+                <label>Bairro</label>
+                <input id="bairro" name="Endereco.Bairro" class="form-control" disabled />
+            </div>
+            <div class="form-group">
+                <label>Cidade</label>
+                <input id="localidade" name="Endereco.Localidade" class="form-control" disabled />
+            </div>
+            <div class="form-group">
+                <label>Estado</label>
+                <input id="uf" name="Endereco.Uf" class="form-control" disabled />
+			</div>
+            <div class="form-group">
+				<input type="submit" value="Salvar" class="btn btn-primary" />
+			</div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
