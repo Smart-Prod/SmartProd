@@ -97,5 +97,13 @@ namespace SmartProd.Models
                 return _database.GetCollection<Saida>("Saida");
             }
         }
+
+        public IMongoCollection<Departamento> Departamento
+        {
+            get
+            {
+                return _database.GetCollection<Departamento>("Departamento");
+            }
+        }
     }
 }

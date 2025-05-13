@@ -1,37 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\0201392411044.INTRALAB\\Desktop\\SmartProd\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{13117D45-00EE-428E-88DB-241D652DD9FA}|SmartProd\\SmartProd.csproj|c:\\users\\0201392411044.intralab\\desktop\\smartprod\\smartprod\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{13117D45-00EE-428E-88DB-241D652DD9FA}|SmartProd\\SmartProd.csproj|solutionrelative:smartprod\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\0201392411044\\Desktop\\Nova pasta\\SmartProd\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\0201392411044.INTRALAB\\Desktop\\SmartProd\\SmartProd\\Views\\Produtos\\Index.cshtml",
-              "RelativeDocumentMoniker": "SmartProd\\Views\\Produtos\\Index.cshtml",
-              "ToolTip": "C:\\Users\\0201392411044.INTRALAB\\Desktop\\SmartProd\\SmartProd\\Views\\Produtos\\Index.cshtml",
-              "RelativeToolTip": "SmartProd\\Views\\Produtos\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T15:13:01.755Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
