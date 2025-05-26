@@ -1,89 +1,98 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
+﻿
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Prod</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Smart Prod</title>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-  <header>
-    <div class="container header-content">
-      <h1 class="logo">Smart <span>Prod</span></h1>
-      <div class="buttons">
-        <button class="login">Login</button>
-        <button class="signup">Sign Up</button>
-      </div>
-    </div>
-  </header>
+    <header>
+        <div class="container header-content">
+            <h1 class="logo">Smart <span>Prod</span></h1>
+            <div class="buttons">
+                <button class="login">Login</button>
+                <button class="signup">Sign Up</button>
+            </div>
+        </div>
+    </header>
 
-  <section class="hero">
-    <div class="container hero-content">
-      <div>
-        <h2>Sistema Gestão de Estoque</h2>
-        <p>Economize seu tempo e evite desperdícios com nosso sistema fácil de usar</p>
-      </div>
-      <img src="https://via.placeholder.com/300x200" alt="Tela do sistema">
-    </div>
-  </section>
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div>
+                    <h2>Sistema de Gestão de Estoque</h2>
+                    <p>Economize seu tempo e evite desperdícios com nosso sistema fácil de usar.</p>
+                </div>
+                <img src="https://via.placeholder.com/300x200" alt="Imagem ilustrativa do sistema SmartProd" />
+            </div>
+        </section>
 
-  <section class="features">
-    <div class="container">
-      <h3>Conheça alguma da funcionalidades do Smart Prod</h3>
-      <div class="cards">
-        <div class="card">
-          <img src="https://via.placeholder.com/50" alt="Ícone 1">
-          <h4>Gestão de estoque</h4>
-          <p>Controle seu estoque em tempo real de forma prática e objetiva.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/50" alt="Ícone 2">
-          <h4>Cadastro de produtos</h4>
-          <p>Facilidade no cadastro e gerenciamento dos produtos.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/50" alt="Ícone 3">
-          <h4>Controle de movimentações</h4>
-          <p>Monitore entradas e saídas para uma gestão eficiente.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/50" alt="Ícone 4">
-          <h4>Relatórios e estatísticas</h4>
-          <p>Gere relatórios detalhados para melhor tomada de decisão.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <section class="features">
+            <div class="container">
+                <h3>Funcionalidades do Smart Prod</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/50" alt="Ícone de Estoque" />
+                        <h4>Gestão de estoque</h4>
+                        <p>Controle seu estoque em tempo real de forma prática e objetiva.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/50" alt="Ícone de Cadastro" />
+                        <h4>Cadastro de produtos</h4>
+                        <p>Facilidade no cadastro e gerenciamento dos produtos.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/50" alt="Ícone de Controle" />
+                        <h4>Controle de movimentações</h4>
+                        <p>Monitore entradas e saídas para uma gestão eficiente.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/50" alt="Ícone de Relatório" />
+                        <h4>Relatórios e estatísticas</h4>
+                        <p>Gere relatórios detalhados para melhor tomada de decisão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section class="why">
-    <div class="container">
-      <h3>Por que usar um sistema de gestão de estoque?</h3>
-      <p>
-        Com um sistema de estoque é muito mais fácil e leva menos tempo para controlar seu estoque. É como ter um assistente pessoal para gerenciar tudo!
-      </p>
-      <p>
-        Ele te ajuda a evitar desperdícios, manter seus produtos organizados e tomar decisões melhores para seu negócio.
-      </p>
-    </div>
-  </section>
+        <section class="why">
+            <div class="container">
+                <h3>Por que usar um sistema de gestão de estoque?</h3>
+                <p>Com um sistema de estoque, é muito mais fácil e leva menos tempo para controlar seu estoque. É como ter um assistente pessoal para gerenciar tudo!</p>
+                <p>Ele ajuda a evitar desperdícios, manter seus produtos organizados e tomar decisões melhores para seu negócio.</p>
+            </div>
+        </section>
 
-  <section class="contact">
-    <div class="container">
-      <h3>Contato</h3>
-      <form>
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Mensagem" required></textarea>
-        <div class="form-buttons">
-          <button type="reset">Cancelar</button>
-          <button type="submit">Enviar</button>
-        </div>
-      </form>
-    </div>
-  </section>
+        <section class="contact">
+            <div class="container">
+                <h3>Contato</h3>
+                <form>
+                    <label>
+                        Nome:
+                        <input type="text" placeholder="Nome" required />
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" placeholder="Email" required />
+                    </label>
+                    <label>
+                        Mensagem:
+                        <textarea placeholder="Mensagem" required></textarea>
+                    </label>
+                    <div class="form-buttons">
+                        <button type="reset">Cancelar</button>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Smart Prod. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

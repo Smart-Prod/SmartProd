@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SmartProd",
+    "\\SmartProd\\Views",
+    "\\SmartProd\\Views\\Home",
+    "\\SmartProd\\Views\\Shared",
+    "\\SmartProd\\wwwroot",
+    "\\SmartProd\\wwwroot\\css"
+  ],
+  "SelectedNode": "\\SmartProd\\Views\\Home\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}
